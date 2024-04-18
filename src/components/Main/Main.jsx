@@ -46,13 +46,14 @@ const Main = () => {
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
     setCurrentItems(products?.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil(products?.length / itemsPerPage));
+    // setPageCount(Math.ceil(products?.length / itemsPerPage));
   }, [itemOffset, itemsPerPage, products]);
 
   //TODO: there should be single useEffect
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % products.length;
+    const newOffset = event.selected + 1;
+    // const newOffset = (event.selected * itemsPerPage) % products.length;
     setItemOffset(newOffset);
   };
 
