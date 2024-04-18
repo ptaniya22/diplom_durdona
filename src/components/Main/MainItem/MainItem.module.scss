@@ -1,0 +1,102 @@
+.mainItem {
+  margin-top: 40px;
+  @media (max-width: 1016px) {
+    margin-left: none;
+  }
+  &_top {
+    display: flex;
+    gap: 36px;
+    padding-bottom: 40px;
+    justify-content: center;
+    &_back {
+      width: 40px;
+      box-shadow: 5px 10px 20px 0px rgba(211, 209, 216, 0.3);
+      background: rgb(255, 255, 255);
+      border-radius: 18.21px;
+      padding: 15px;
+    }
+    &_title {
+      color: rgb(0, 0, 0);
+      font-family: Open Sans;
+      font-size: 36.41px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+  &_bottom {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    @media (max-width: 1016px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &_left {
+      display: flex;
+      &_img {
+        border-radius: 10px;
+        max-width: 449px;
+        width: 100%;
+        height: 340px;
+        box-shadow: 5px 10px 20px 0px rgba(211, 209, 216, 0.3);
+      }
+    }
+    &_right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &_price {
+        display: flex;
+        gap: 180px;
+        color: rgb(0, 0, 0);
+        font-family: Open Sans;
+        font-size: 30px;
+        font-weight: 400;
+        border-bottom: 1px solid;
+        padding-bottom: 20px;
+        width: max-content;
+      }
+      &_rating {
+        color: rgb(0, 0, 0);
+        font-family: Open Sans;
+        font-size: 30px;
+        font-weight: 400;
+        padding-top: 20px;
+        span {
+          &:nth-of-type(2) {
+            margin-left: 130px;
+            border-radius: 136px;
+            box-shadow: 0px 6.07px 24.29px 0px rgba(254, 114, 76, 0.2);
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            font-size: 20px;
+            span {
+              img {
+                width: 33px;
+                height: 33px;
+                margin-left: 10px;
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+      &_cont {
+        max-width: 346px;
+        width: 100%;
+        display: flex;
+        text-align: justify;
+        &_description {
+          color: rgb(191, 189, 189);
+          font-family: Open Sans;
+          font-size: 30px;
+          font-weight: 400;
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
